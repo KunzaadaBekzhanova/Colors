@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ConstraintLayout1"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/showColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textSize="60sp"
+        android:hint="Цвет"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="104dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_red"
+        android:layout_width="109dp"
+        android:layout_height="47dp"
+        android:layout_gravity="fill_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/btn_rounded_red"
+        android:text="КРАСНЫЙ"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_yellow"
+        android:layout_width="108dp"
+        android:layout_height="61dp"
+        android:layout_gravity="fill_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/btn_rounded_corner"
+        android:text="ЖЕЛТЫЙ"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_green"
+        android:layout_width="106dp"
+        android:layout_height="50dp"
+        android:layout_gravity="fill_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/btn_rounded_green"
+        android:text="ЗЕЛЕНЫЙ"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.675" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
